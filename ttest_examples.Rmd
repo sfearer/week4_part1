@@ -1,0 +1,10 @@
+---
+title: "Week 4 Part 1- confidence intervals and t-tests"
+author: "Sam Fearer"
+date: "10/30/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
