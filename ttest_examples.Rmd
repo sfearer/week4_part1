@@ -8,3 +8,41 @@ output: html_document
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+
+
+
+## 1. Confidence intervals associated with a sample
+
+```{r}
+
+otter_length <- c(38, 41, 50, 27, 32, 41, 48, 60, 43)
+
+t.test(otter_length)
+
+
+```
+
+
+## 2. T-test (1-sample t-test)
+
+See a claim: mean otter length is 50 inches.
+
+```{r}
+otter_test <- t.test(x = otter_length, mu = 50)
+otter_test
+
+```
+
+
+## 3.Two-sample t-test
+
+
+```{r}
+
+desert_bighorns <- c(32, 44, 18, 26, 50, 33, 42, 40)
+sierra_bighorns <- c(28, 31, 41, 42, 46, 29, 31)
+
+t.test(x = desert_bighorns, y = sierra_bighorns)
+
+```
+
